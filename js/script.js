@@ -62,7 +62,7 @@ function enviar() {
         window.alert('Faltam dados! Preencha o que estiver faltando.')
     } else {
         if (email.value != conemail.value) {
-            alert('A confirmação de EMAIl precisa ser IGUAL!')
+            alert('A confirmação de EMAIL precisa ser IGUAL!')
         } else if (senha.value != consenha.value) {
             alert('A confirmação de SENHA precisa ser IGUAL!')
         } else {
