@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+
+/* A responsividade do site */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 0.8em;
+    }
+    #pagina {
+        flex-direction: column;
+    }
+    #pagina .formulario {
+        width: 90%;
+        margin: 5% auto;
+        font-size: 1.4em;
+    }
+    #pagina .formulario .caixa {
+        font-size: 1em;
+        padding: 1% 10% 1% 8%;
+    }
+    #pagina .formulario .caixa input {
+        font-size: 1.3em;
+    }
+    #pagina .formulario .botoes{
+        font-size: 1em;
+        margin: 11% auto 9%;
+        gap: 1.2em;
+    }
+    #pagina .formulario .botoes input {
+        font-size: 1.5em;
+        padding: 1.5%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        font-size: 1.5em;
+    }
+    #pagina {
+        flex-direction: column;
+    }
+    #pagina .formulario {
+        width: 90%;
+        margin: 5% auto;
+    }
+    #pagina .formulario .caixa {
+        font-size: 1.4em;
+        padding: 1% 10% 1% 8%;
+    }
+    #pagina .formulario .caixa input {
+        font-size: 1.2em;
+    }
+    #pagina .formulario .botoes{
+        font-size: 1em;
+        margin: 8% auto 6%;
+        gap: 1.5em;
+    }
+    #pagina .formulario .botoes input {
+        font-size: 1.5em;
+        padding: 1.5%;
+    }
+}

@@ -1,0 +1,103 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'texto';
+    src: url(../fontes/open-dyslexic.ttf) format(truetype);
+}
+
+/* A mente do site */
+
+body {
+    font: 1.3em 'Arial', 'San-serif';
+    margin: 0;
+    background-image: url(../imagens/Brilhos\ rosas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+
+/* A mente do site */
+
+#pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    gap: 4%;
+}
+
+#pagina .texto {
+    font-family: 'texto';
+    text-align: center;
+    font-size: 2em;
+    color: rgb(212, 12, 106);
+}
+#pagina .texto h1, #pagina .texto p {
+    margin: 2% 5%;
+}
+
+#pagina .formulario {
+    background-color: rgb(212, 12, 106);
+    color: white;
+    border-radius: 2em;
+    width: 40%;
+    padding: 1% 0;
+}
+#pagina .formulario .caixa {
+    padding: 0 10%;
+    margin: 1em auto;
+}
+#pagina .formulario .caixa h2 {
+    margin: 1% auto;
+}
+#pagina .formulario .caixa input {
+    font-size: 1em;
+    width: 100%;
+    border-radius: 0.8em;
+    background-color: #FEE3E8;
+    border-color: #FEE3E8;
+    margin: 1% auto;
+}
+#pagina .formulario .caixa .aviso {
+    color: #000000;
+}
+#pagina .formulario .botoes {
+    width: auto;
+    text-align: center;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+#pagina .formulario .botoes input {
+    font-size: 1em;
+    border-radius: 0.8em;
+    background-color: #FEE3E8;
+    border-color: #FEE3E8;
+}
+
+/* O rodapé do site */
+
+#rodape {
+    background-color: #D5405E;
+    text-align: center;
+    padding: 1.5em;
+    color: white;
+}
+#rodape a {
+    color: #FEE3E8;
+    text-decoration: none;
+    transition-duration: .6s;
+}
+#rodape a:hover {
+    color: #ff97a8;
+    text-decoration: none;
+    transition-duration: .6s;
+}
+#rodape a:active {
+    color: #FEE3E8;
+    text-decoration: none;
+    transition-duration: .2s;
+}
