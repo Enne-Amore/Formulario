@@ -83,8 +83,9 @@ a {
 #rodape {
     background-color: #D5405E;
     text-align: center;
-    padding: 1.5em;
+    padding: 1em;
     color: white;
+    font-size: 1.5em;
 }
 #rodape a {
     color: #FEE3E8;

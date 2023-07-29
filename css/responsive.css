@@ -9,6 +9,9 @@
     #pagina {
         flex-direction: column;
     }
+    #pagina .texto {
+        margin-top: 3%;
+    }
     #pagina .formulario {
         width: 90%;
         margin: 5% auto;
@@ -39,6 +42,9 @@
     #pagina {
         flex-direction: column;
     }
+    #pagina .texto {
+        margin-top: 1%;
+    }
     #pagina .formulario {
         width: 90%;
         margin: 5% auto;
@@ -59,4 +65,19 @@
         font-size: 1.5em;
         padding: 1.5%;
     }
+}
+
+@media screen and (min-height: 850px) {
+    body {
+        background-attachment: fixed;
+    }
+    #pagina {
+        margin: 5% auto;
+    }
+    #rodape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }    
 }

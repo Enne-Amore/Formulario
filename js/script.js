@@ -28,23 +28,11 @@ function limpar() {
     alert('Tudo limpo com sucesso!')
 }
 function enviar() {
-    if (nome.value == '') {
-        aviso_nome.innerHTML = 'Preencha o nome*'
-        nome.focus()
+    if (consenha.value == '') {
+        aviso_consenha.innerHTML = 'Preencha a confirmação de senha*'
+        consenha.focus()
     } else {
-        aviso_nome.innerHTML = ''
-    }
-    if (email.value == '') {
-        aviso_email.innerHTML = 'Preencha o email*'
-        email.focus()
-    } else {
-        aviso_email.innerHTML = ''
-    }
-    if (conemail.value == '') {
-        aviso_conemail.innerHTML = 'Preencha a confirmação de email*'
-        conemail.focus()
-    } else {
-        aviso_conemail.innerHTML = ''
+        aviso_consenha.innerHTML = ''
     }
     if (senha.value == '') {
         aviso_senha.innerHTML = 'Preencha a senha*'
@@ -52,11 +40,23 @@ function enviar() {
     } else {
         aviso_senha.innerHTML = ''
     }
-    if (consenha.value == '') {
-        aviso_consenha.innerHTML = 'Preencha a confirmação de senha*'
-        consenha.focus()
+    if (conemail.value == '') {
+        aviso_conemail.innerHTML = 'Preencha a confirmação de email*'
+        conemail.focus()
     } else {
-        aviso_consenha.innerHTML = ''
+        aviso_conemail.innerHTML = ''
+    }
+    if (email.value == '') {
+        aviso_email.innerHTML = 'Preencha o email*'
+        email.focus()
+    } else {
+        aviso_email.innerHTML = ''
+    }
+    if (nome.value == '') {
+        aviso_nome.innerHTML = 'Preencha o nome*'
+        nome.focus()
+    } else {
+        aviso_nome.innerHTML = ''
     }
     if (nome.value == '' || email.value == '' || conemail.value == '' || senha.value == '' || consenha.value == '') {
         window.alert('Faltam dados! Preencha o que estiver faltando.')
