@@ -22,7 +22,7 @@
         padding: 1% 10% 1% 8%;
     }
     #pagina .formulario .caixa input {
-        font-size: 6vw;
+        font-size: 5.7vw;
     }
     #pagina .formulario .botoes{
         margin: 11% auto 9%;
@@ -35,7 +35,7 @@
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
     body {
-        font-size: 1.5em;
+        font-size: 4vw;
     }
     #pagina {
         flex-direction: column;
@@ -46,13 +46,14 @@
     #pagina .formulario {
         width: 90%;
         margin: 5% auto;
+        padding: 5% 0;
     }
     #pagina .formulario .caixa {
-        font-size: 1.8em;
+        font-size: 6.5vw;
         padding: 1% 10% 1% 8%;
     }
     #pagina .formulario .caixa input {
-        font-size: 0.9em;
+        font-size: 5.5vw;
     }
     #pagina .formulario .botoes{
         font-size: 1em;
