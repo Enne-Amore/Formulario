@@ -7,16 +7,17 @@
 
 /* A mente do site */
 
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font: 1.3em 'Arial', 'San-serif';
-    margin: 0;
-    min-height: 100vh;
+    max-width: 100%;
+    height: auto;
     background-image: url(../imagens/Brilhos\ rosas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-a {
-    text-decoration: none;
 }
 
 /* A mente do site */
@@ -85,7 +86,7 @@ a {
 #rodape {
     background-color: #D5405E;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
     color: white;
     font-size: 1.5em;
 }
