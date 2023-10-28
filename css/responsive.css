@@ -18,10 +18,15 @@
         padding: 5% 0;
     }
     #pagina .formulario .caixa {
-        font-size: 7vw;
-        padding: 1% 10% 1% 8%;
+        margin: 2em auto 1em;
     }
-    #pagina .formulario .caixa input {
+    #pagina .formulario .caixa .campo {
+        font-size: 5.3vw;
+    }
+    #pagina .formulario .caixa .campo label {
+        padding: 3% 0;
+    }
+    #pagina .formulario .caixa .campo .input {
         font-size: 5.7vw;
     }
     #pagina .formulario .botoes{
@@ -49,11 +54,13 @@
         padding: 5% 0;
     }
     #pagina .formulario .caixa {
-        font-size: 6.5vw;
-        padding: 1% 10% 1% 8%;
+        margin: 2em auto 1em;
     }
-    #pagina .formulario .caixa input {
-        font-size: 5.5vw;
+    #pagina .formulario .caixa .campo {
+        font-size: 5.3vw;
+    }
+    #pagina .formulario .caixa .campo label {
+        padding: 2% 0;
     }
     #pagina .formulario .botoes{
         font-size: 1em;

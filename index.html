@@ -19,36 +19,46 @@
         </article>
         <section class="formulario">
             <form action="index.html" method="post">
-                <div class="caixa">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo">
+                <article class="caixa">
+                    <div class="campo">
+                        <input type="text" name="nome" id="nome" class="input" required>
+                        <label for="nome">Nome:</label>
+                    </div>
                     <div class="aviso">
                     </div>
-                </div>
-                <div class="caixa">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                </article>
+                <article class="caixa">
+                    <div class="campo">
+                        <input type="email" name="email" id="email" class="input" required>
+                        <label for="email">Email:</label>
+                    </div>
                     <div class="aviso">
                     </div>
-                </div>
-                <div class="caixa">
-                    <label for="conemail">Confirmação de email:</label>
-                    <input type="email" name="conemail" id="conemail" placeholder="Digite o mesmo email">
+                </article>
+                <article class="caixa">
+                    <div class="campo">
+                        <input type="email" name="conemail" id="conemail" class="input" required>
+                        <label for="conemail">Confirmação de email:</label>
+                    </div>
                     <div class="aviso">
                     </div>
-                </div>
-                <div class="caixa">
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" placeholder="Insira uma senha">
+                </article>
+                <article class="caixa">
+                    <div class="campo">
+                        <input type="password" name="senha" id="senha" class="input" required>
+                        <label for="senha">Senha:</label>
+                    </div>
                     <div class="aviso">
                     </div>
-                </div>
-                <div class="caixa">
-                    <label for="consenha">Confirmação de senha:</label>
-                    <input type="password" name="consenha" id="consenha" placeholder="Insira a mesma senha">
+                </article>
+                <article class="caixa">
+                    <div class="campo">
+                        <input type="password" name="consenha" id="consenha" class="input" required>
+                        <label for="consenha">Confirmação de senha:</label>
+                    </div>
                     <div class="aviso">
                     </div>
-                </div>
+                </article>
                 <div class="botoes">
                     <input type="reset" value="Limpar" onclick="limpar()">
                     <input type="button" value="Enviar" onclick="enviar()">

@@ -33,7 +33,7 @@ body {
     font-family: 'texto';
     text-align: center;
     font-size: 2em;
-    color: rgb(212, 12, 106);
+    color: #d40c6a;
     font-weight: bolder;
 }
 #pagina .texto p {
@@ -41,26 +41,50 @@ body {
 }
 
 #pagina .formulario {
-    background-color: rgb(212, 12, 106);
+    background-color: white;
+    border: 5px groove #d40c6a;
     color: white;
     border-radius: 2em;
     width: 40%;
     padding: 2% 0;
 }
 #pagina .formulario .caixa {
-    padding: 0 10%;
+    padding: 4% 10%;
     margin: 0 auto 0.5em;
-    font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1em;
 }
-#pagina .formulario .caixa input {
-    font-size: 0.8em;
+#pagina .formulario .caixa .campo {
+    position: relative;
+}
+#pagina .formulario .caixa .campo label {
+    position: absolute;
+    color: #D5405E;
+    left: 0;
+    bottom: 2%;
+    padding: 1.5% 0;
+    font-size: 1.2em;
+    cursor: text;
+    transition: .3s ease-in-out;
+}
+#pagina .formulario .caixa .campo .input {
+    font-size: 1em;
+    color: #d40c6a;
     width: 100%;
-    border-radius: 0.8em;
-    background-color: #FEE3E8;
-    border-color: #FEE3E8;
-    margin: 1% auto;
-    padding: 1% 2%;
+    margin: 0% auto;
+    border: 0;
+    border-bottom: 2.5px solid #D5405E;
+    outline: 0;
+    transition: .1s ease-in-out;
+}
+#pagina .formulario .caixa .campo .input:focus,
+#pagina .formulario .caixa .campo .input:valid {
+    border-bottom: 3px solid #d40c6a;
+}
+#pagina .formulario .caixa .campo .input:focus ~ label,
+#pagina .formulario .caixa .campo .input:valid ~ label {
+    transform: translateY(-60%);
+    font-size: 1em;
+    color: #d40c6a;
 }
 #pagina .formulario .caixa .aviso {
     color: #000000;
