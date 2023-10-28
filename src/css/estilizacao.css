@@ -88,11 +88,12 @@ body {
 }
 #pagina .formulario .caixa .aviso {
     color: #000000;
+    margin-top: 1%;
 }
 #pagina .formulario .botoes {
     width: auto;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     gap: 1em;
@@ -102,7 +103,7 @@ body {
     border-radius: 1em;
     background-color: #FEE3E8;
     border-color: #FEE3E8;
-    padding: 1% 2%;
+    padding: 2% 3%;
 }
 
 /* O rodapé do site */

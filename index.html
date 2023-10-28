@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="css/estilizacao.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="src/css/estilizacao.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <script src="src/js/script.js" defer></script>
 </head>
 <body>
     <main id="pagina">
@@ -60,17 +61,16 @@
                     </div>
                 </article>
                 <div class="botoes">
-                    <input type="reset" value="Limpar" onclick="limpar()">
-                    <input type="button" value="Enviar" onclick="enviar()">
+                    <input type="reset" value="Limpar" id="limpar" aria-label="Botão de limpar todo o formulário">
+                    <input type="button" value="Enviar" id="enviar" aria-label="botão de enviar todos os dados do formulário">
                 </div>
             </form>
         </section>
     </main>
     <footer id="rodape">
         <p>
-            Página criada por <a href="https://github.com/Enne-Amore" rel="external" target="_blank">Enne Jim Pessoa</a>
+            Página criada por <a href="https://github.com/Enne-Amore" aria-label="Meu perfil do GitHub" rel="external" target="_blank">Enne Jim Pessoa</a>
         </p>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>
