@@ -15,7 +15,7 @@ body {
     font: 1.3em 'Arial', 'San-serif';
     max-width: 100%;
     height: auto;
-    background-image: url(../imagens/Brilhos\ rosas.jpg);
+    background-image: url(../imagens/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,15 +26,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1em;
     margin: 2% auto;
 }
 
 #pagina .texto {
     font-family: 'texto';
-    text-align: center;
     font-size: 2em;
-    color: #d40c6a;
     font-weight: bolder;
+    text-align: center;
+    background-color: white;
+    color: #d40c6a;
+    border: 5px groove #d40c6a;
+    border-radius: 1em;
+    padding: 3% 0;
 }
 #pagina .texto p {
     margin: 2% 5%;
@@ -144,15 +149,16 @@ body {
 #rodape a {
     color: #FEE3E8;
     text-decoration: none;
-    transition-duration: .6s;
+    transition-duration: .4s;
 }
 #rodape a:hover {
+    background-color: white;
     color: #ff97a8;
-    text-decoration: none;
-    transition-duration: .6s;
+    border-radius: 1em;
+    padding: 0.5%;
 }
 #rodape a:active {
-    color: #FEE3E8;
-    text-decoration: none;
+    background-color: #FEE3E8;
+    color: white;
     transition-duration: .2s;
 }

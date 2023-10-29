@@ -11,13 +11,12 @@
         flex-direction: column;
     }
     #pagina .texto {
-        margin-top: 3%;
+        margin: 3% 6% 0;
     }
     
     #pagina .formulario {
         width: 90%;
         margin: 5% auto;
-        padding: 5% 0;
     }
     #pagina .formulario .caixa {
         margin: 2em auto 1em;
@@ -27,6 +26,7 @@
     }
     #pagina .formulario .caixa .campo label {
         padding: 3% 0;
+        font-size: 1.1em;
     }
     #pagina .formulario .caixa .campo .input {
         font-size: 5.7vw;
@@ -41,7 +41,7 @@
     }
 
     #rodape {
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
 }
 
@@ -53,12 +53,11 @@
         flex-direction: column;
     }
     #pagina .texto {
-        margin-top: 1%;
+        margin: 3% 6% 0;
     }
     #pagina .formulario {
         width: 90%;
         margin: 5% auto;
-        padding: 5% 0;
     }
     #pagina .formulario .caixa {
         margin: 2em auto 1em;
@@ -68,6 +67,7 @@
     }
     #pagina .formulario .caixa .campo label {
         padding: 2% 0;
+        font-size: 1.1em;
     }
     #pagina .formulario .botoes{
         font-size: 1em;
