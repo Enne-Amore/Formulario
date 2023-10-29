@@ -86,6 +86,21 @@ body {
     font-size: 1em;
     color: #d40c6a;
 }
+#pagina .formulario .caixa .campo .senha {
+    position: absolute;
+    display: inline;
+    color: #d40c6a;
+    font-size: 1.5em;
+    right: 0;
+    bottom: 5%;
+    cursor: pointer;
+}
+#pagina .formulario .caixa .campo .senha:hover {
+    color: #D5405E;
+}
+#pagina .formulario .caixa .campo .senha.invisivel {
+    display: none;
+}
 #pagina .formulario .caixa .aviso {
     color: #000000;
     margin-top: 1%;
@@ -98,12 +113,23 @@ body {
     justify-content: center;
     gap: 1em;
 }
-#pagina .formulario .botoes input {
+#pagina .formulario .botoes button {
+    border: 0;
     font-size: 1em;
+    font-weight: bolder;
     border-radius: 1em;
-    background-color: #FEE3E8;
-    border-color: #FEE3E8;
+    background-color: #d40c6a;
+    color: white;
     padding: 2% 3%;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+#pagina .formulario .botoes button:hover {
+    background-color: #D5405E;
+}
+#pagina .formulario .botoes button:active {
+    background-color: #ff97a8;
+    transition-duration: .2s;
 }
 
 /* O rodapé do site */

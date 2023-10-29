@@ -6,7 +6,10 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="src/css/estilizacao.css">
     <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="src/js/script.js" defer></script>
+    <script src="src/js/ver-senha.js" defer></script>
 </head>
 <body>
     <main id="pagina">
@@ -46,23 +49,35 @@
                 </article>
                 <article class="caixa">
                     <div class="campo">
-                        <input type="password" name="senha" id="senha" class="input" required>
+                        <input type="password" name="senha" id="senha" class="input password" required>
                         <label for="senha">Senha:</label>
+                        <span class="material-symbols-outlined senha visivel" aria-hidden="true">
+                            visibility
+                        </span>
+                        <span class="material-symbols-outlined senha invisivel" aria-hidden="true">
+                            visibility_off
+                        </span>
                     </div>
                     <div class="aviso">
                     </div>
                 </article>
                 <article class="caixa">
                     <div class="campo">
-                        <input type="password" name="consenha" id="consenha" class="input" required>
+                        <input type="password" name="consenha" id="consenha" class="input password" required>
                         <label for="consenha">Confirmação de senha:</label>
+                        <span class="material-symbols-outlined senha visivel" aria-hidden="true">
+                            visibility
+                        </span>
+                        <span class="material-symbols-outlined senha invisivel" aria-hidden="true">
+                            visibility_off
+                        </span>
                     </div>
                     <div class="aviso">
                     </div>
                 </article>
                 <div class="botoes">
-                    <input type="reset" value="Limpar" id="limpar" aria-label="Botão de limpar todo o formulário">
-                    <input type="button" value="Enviar" id="enviar" aria-label="botão de enviar todos os dados do formulário">
+                    <button type="reset" id="limpar" aria-label="Botão de limpar todo o formulário">Limpar</button>
+                    <button type="submit" id="enviar" aria-label="Botão de enviar todos os dados submetidos no formulário">Enviar</button>
                 </div>
             </form>
         </section>
