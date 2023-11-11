@@ -36,10 +36,11 @@ limpar.addEventListener('click', () => {
 
 // Funcionalidadde de enviar todos os dados do formulário
 const enviar = document.getElementById('enviar')
-enviar.addEventListener('click', () => {
+enviar.addEventListener('click', (e) => {
     const ok = confirm("Tem certeza que deseja enviar todos os dados já informados?")
     if (ok) {
         if (consenha.value == '') {
+            e.preventDefault()
             aviso_consenha.textContent = 'Preencha a confirmação de senha*'
             consenha.focus()
         } else {
@@ -47,6 +48,7 @@ enviar.addEventListener('click', () => {
         }
 
         if (senha.value == '') {
+            e.preventDefault()
             aviso_senha.textContent = 'Preencha a senha*'
             senha.focus()
         } else {
@@ -54,6 +56,7 @@ enviar.addEventListener('click', () => {
         }
 
         if (conemail.value == '') {
+            e.preventDefault()
             aviso_conemail.textContent = 'Preencha a confirmação de email*'
             conemail.focus()
         } else {
@@ -61,6 +64,7 @@ enviar.addEventListener('click', () => {
         }
 
         if (email.value == '') {
+            e.preventDefault()
             aviso_email.textContent = 'Preencha o email*'
             email.focus()
         } else {
@@ -68,6 +72,7 @@ enviar.addEventListener('click', () => {
         }
 
         if (nome.value == '') {
+            e.preventDefault()
             aviso_nome.textContent = 'Preencha o nome*'
             nome.focus()
         } else {
@@ -75,12 +80,15 @@ enviar.addEventListener('click', () => {
         }
 
         if (nome.value == '' || email.value == '' || conemail.value == '' || senha.value == '' || consenha.value == '') {
+            e.preventDefault()
             window.alert('Faltam dados! Preencha o que estiver faltando.')
         } else {
             if (email.value != conemail.value) {
+                e.preventDefault()
                 alert('A confirmação de EMAIL precisa ser IGUAL!')
 
             } else if (senha.value != consenha.value) {
+                e.preventDefault()
                 alert('A confirmação de SENHA precisa ser IGUAL!')
                 
             } else {
