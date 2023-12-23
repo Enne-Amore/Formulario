@@ -20,6 +20,17 @@ body {
     background-size: cover;
 }
 
+:focus {
+    outline: 0;
+}
+
+:root {
+    --rosa-escura: #d40c6a;
+    --rosa-clara: #ff97a8;
+    --vermelha-escura: #D5405E;
+    --vermelha-clara: #FEE3E8;
+}
+
 /* A mente do site */
 
 #pagina {
@@ -36,8 +47,9 @@ body {
     font-weight: bolder;
     text-align: center;
     background-color: white;
-    color: #d40c6a;
-    border: 5px groove #d40c6a;
+    color: var(--rosa-escura);
+    border: 5px groove var(--rosa-escura);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
     border-radius: 1em;
     padding: 3% 0;
 }
@@ -47,7 +59,8 @@ body {
 
 #pagina .formulario {
     background-color: white;
-    border: 5px groove #d40c6a;
+    border: 5px groove var(--rosa-escura);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
     color: white;
     border-radius: 2em;
     width: 40%;
@@ -63,7 +76,7 @@ body {
 }
 #pagina .formulario .caixa .campo label {
     position: absolute;
-    color: #D5405E;
+    color: var(--vermelha-escura);
     left: 0;
     bottom: 2%;
     padding: 1.5% 0;
@@ -73,41 +86,48 @@ body {
 }
 #pagina .formulario .caixa .campo .input {
     font-size: 1em;
-    color: #d40c6a;
+    color: var(--rosa-escura);
     width: 100%;
     margin: 0% auto;
     border: 0;
-    border-bottom: 2.5px solid #D5405E;
+    border-bottom: 2.5px solid var(--vermelha-escura);
     outline: 0;
     transition: .1s ease-in-out;
 }
 #pagina .formulario .caixa .campo .input:focus,
 #pagina .formulario .caixa .campo .input:valid {
-    border-bottom: 3px solid #d40c6a;
+    border-bottom: 3px solid var(--rosa-escura);
 }
 #pagina .formulario .caixa .campo .input:focus ~ label,
 #pagina .formulario .caixa .campo .input:valid ~ label {
     transform: translateY(-60%);
     font-size: 1em;
-    color: #d40c6a;
+    color: var(--rosa-escura);
 }
 #pagina .formulario .caixa .campo .senha {
     position: absolute;
     display: inline;
-    color: #d40c6a;
+    color: var(--rosa-escura);
     font-size: 1.5em;
+    padding: 0.5% 0;
     right: 0;
-    bottom: 5%;
+    bottom: 0;
     cursor: pointer;
+    transition: .4s;
 }
-#pagina .formulario .caixa .campo .senha:hover {
-    color: #D5405E;
+#pagina .formulario .caixa .campo .senha:focus-visible {
+    outline: auto;
+    padding: 1%;
+}
+#pagina .formulario .caixa .campo .senha:hover,
+#pagina .formulario .caixa .campo .senha:focus-visible {
+    color: var(--vermelha-escura);
 }
 #pagina .formulario .caixa .campo .senha.invisivel {
     display: none;
 }
 #pagina .formulario .caixa .aviso {
-    color: #000000;
+    color: black;
     margin-top: 1%;
 }
 #pagina .formulario .botoes {
@@ -123,42 +143,48 @@ body {
     font-size: 1em;
     font-weight: bolder;
     border-radius: 1em;
-    background-color: #d40c6a;
+    background-color: var(--rosa-escura);
     color: white;
     padding: 2% 3%;
     cursor: pointer;
     transition-duration: .4s;
 }
-#pagina .formulario .botoes button:hover {
-    background-color: #D5405E;
+#pagina .formulario .botoes button:focus-visible {
+    outline: auto;
+}
+#pagina .formulario .botoes button:hover,
+#pagina .formulario .botoes button:focus-visible {
+    background-color: var(--vermelha-escura);
 }
 #pagina .formulario .botoes button:active {
-    background-color: #ff97a8;
+    background-color: var(--rosa-clara);
     transition-duration: .2s;
 }
 
 /* O rodapé do site */
 
 #rodape {
-    background-color: #D5405E;
+    background-color: var(--vermelha-escura);
     text-align: center;
     padding: 1.5em;
     color: white;
     font-size: 1.5em;
 }
 #rodape a {
-    color: #FEE3E8;
+    color: var(--vermelha-clara);
     text-decoration: none;
+    font-weight: bolder;
     transition-duration: .4s;
 }
-#rodape a:hover {
+#rodape a:hover,
+#rodape a:focus-visible {
     background-color: white;
-    color: #ff97a8;
+    color: var(--rosa-clara);
     border-radius: 1em;
     padding: 0.5%;
 }
 #rodape a:active {
-    background-color: #FEE3E8;
+    background-color: var(--vermelha-clara);
     color: white;
     transition-duration: .2s;
 }
