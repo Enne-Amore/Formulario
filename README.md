@@ -1,27 +1,27 @@
 
 # 💖 Formulário
 
-Um site web com um formulário simples pedindo nome, email e senha, e tem um botão de resetar todos os campos de preenchimento além do botão de enviar. Essa página é mais concentrada em validação de dados.
-
-
-## ✅ Demonstração
-
-[Clique aqui para acessar o meu site](https://enne-amore.github.io/Formulario/)
-
-
-## 🚀 Tecnologias Utilizadas
-
-- HTML
-- CSS
-- JavaScript
+ Um site web com um formulário simples pedindo nome, email e senha, e tem um botão de resetar todos os campos de preenchimento além do botão de enviar. Essa página é mais concentrada em validação de dados.
 
 
 ## 🪄 Funcionalidades
  
-- Mais acessibilidade usando a tecla "tab"
-- Efeitos de "hover" e de "active" nos elementos clicáveis
-- Validação de dados
-- Botão de resetar todos os campos de preenchimento
+ - Mais acessibilidade usando a tecla "tab"
+ - Efeitos de "hover" e de "active" nos elementos clicáveis
+ - Validação de dados
+ - Botão de resetar todos os campos de preenchimento
+
+
+## ✅ Demonstração
+
+ [Clique aqui para acessar o meu site](https://enne-amore.github.io/Formulario/)
+
+
+## 🚀 Tecnologias Utilizadas
+
+ - HTML
+ - CSS
+ - JavaScript
 
 
 ## 🌈 Documentação de cores
@@ -43,4 +43,4 @@ Um site web com um formulário simples pedindo nome, email e senha, e tem um bot
 
 ## 🔧 Suporte
 
-Para me contatar como suporte, o meu email é EnneFofe10@gmail.com 
+ Para me contatar como suporte, o meu email é EnneFofe10@gmail.com 
