@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* Fontes */
+@font-face {
+    font-family: 'texto';
+    src: url(../fontes/open-dyslexic.ttf) format(truetype);
+}
+
+/* Reset nas tags */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--padrao);
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Variáveis CSS */
+:root {
+    --rosa-escura: #d40c6a;
+    --rosa-clara: #ff97a8;
+    --vermelha-escura: #D5405E;
+    --vermelha-clara: #FEE3E8;
+    --texto: 'texto';
+    --padrao: Arial, Helvetica, sans-serif;
+}
+
+/* Estilização da barrinha de rolagem */
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--rosa-escura);
+    border-radius: 1em;
+}
+
+/* Animações dos elementos */
+@keyframes esquerda {
+    from {
+        opacity: 0;
+        translate: -10vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes direita {
+    from {
+        opacity: 0;
+        translate: 10vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes baixo {
+    from {
+        opacity: 0;
+        translate: 0 20vh;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}

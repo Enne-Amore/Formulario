@@ -1,43 +1,47 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
-/* A responsividade do site */
-
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 4vw;
-    }
-
+@media screen and (max-width: 1200px) {
     #pagina {
         flex-direction: column;
     }
     #pagina .texto {
         margin: 3% 6% 0;
     }
-    
+
     #pagina .formulario {
-        width: 90%;
         margin: 5% auto;
     }
     #pagina .formulario .caixa {
         margin: 2em auto 1em;
     }
-    #pagina .formulario .caixa .campo {
-        font-size: 5.3vw;
-    }
     #pagina .formulario .caixa .campo label {
         padding: 3% 0;
         font-size: 1.1em;
     }
-    #pagina .formulario .caixa .campo .input {
-        font-size: 5.7vw;
-    }
-    #pagina .formulario .botoes{
-        margin: 6% auto 9%;
-        gap: 2.2em;
-    }
     #pagina .formulario .botoes button {
-        font-size: 6vw;
-        padding: 3% 4%;
+        font-size: 1.5em;
+        padding: 3% 5%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+    body {
+        font-size: 4vw;
+    }
+
+    #pagina .texto {
+        font-size: 1.8em;
+    }
+    
+    #pagina .formulario {
+        width: 90%;
+    }
+    #pagina .formulario .caixa .campo {
+        font-size: 1.3em;
+    }
+    #pagina .formulario .botoes {
+        margin: 8% auto 10%;
+        gap: 2.2em;
     }
 
     #rodape {
@@ -45,38 +49,21 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (orientation: landscape) {
     body {
-        font-size: 4vw;
+        font-size: 2vw;
     }
-    #pagina {
-        flex-direction: column;
-    }
-    #pagina .texto {
-        margin: 3% 6% 0;
-    }
+
     #pagina .formulario {
-        width: 90%;
-        margin: 5% auto;
-    }
-    #pagina .formulario .caixa {
-        margin: 2em auto 1em;
+        width: 75%;
     }
     #pagina .formulario .caixa .campo {
-        font-size: 5.3vw;
+        font-size: 1.5em;
     }
-    #pagina .formulario .caixa .campo label {
-        padding: 2% 0;
-        font-size: 1.1em;
-    }
-    #pagina .formulario .botoes{
+    #pagina .formulario .botoes {
         font-size: 1em;
         margin: 8% auto 6%;
-        gap: 1.5em;
-    }
-    #pagina .formulario .botoes button {
-        font-size: 1.5em;
-        padding: 1.5%;
+        gap: 2.2em;
     }
 }
 
